@@ -1,0 +1,12 @@
+<launch>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find map_generator)/config/map_generator.rviz">
+    </node>
+
+
+    <node pkg="map_generator" name="map_node" type="map_generator" output="screen">
+    </node>  
+
+
+
+</launch>
